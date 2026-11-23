@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>النهل المنير للتدريب والتأهيل</title>
+<meta name="description" content="النهل المنير للتدريب والتأهيل - برامج تدريبية وتأهيلية لبناء المهارات وتطوير القدرات.">
+<link rel="icon" href="logo.png">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --brand:#3d919c; --brand-deep:#256b75; --brand-soft:#e4f2f4;
+  --bg:#f6fafb; --card:#ffffff; --ink:#12313a; --muted:#5b7780; --line:#d6e6e9;
+  --hero-a:#256b75; --hero-b:#3d919c;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --brand:#56b3bf; --brand-deep:#7cc9d3; --brand-soft:#16323a;
+  --bg:#0c1a1e; --card:#122429; --ink:#e8f3f5; --muted:#93b0b7; --line:#1f3a41;
+  --hero-a:#10343b; --hero-b:#1d5964;}}
+:root[data-theme="dark"]{
+  --brand:#56b3bf; --brand-deep:#7cc9d3; --brand-soft:#16323a;
+  --bg:#0c1a1e; --card:#122429; --ink:#e8f3f5; --muted:#93b0b7; --line:#1f3a41;
+  --hero-a:#10343b; --hero-b:#1d5964;}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+a,button{outline:none}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Tajawal","Segoe UI",Tahoma,sans-serif;line-height:1.8;font-size:17px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header.top{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--ink);text-decoration:none;font-size:16px}
+.brand img{height:34px;width:auto}
+nav{display:flex;gap:18px}
+nav a{color:var(--muted);text-decoration:none;font-size:15px;font-weight:500}
+nav a:hover{color:var(--brand)}
+@media(max-width:560px){nav{display:none}}
+.hero{background:linear-gradient(135deg,var(--hero-a),var(--hero-b));color:#fff;text-align:center;padding:64px 0 76px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:auto -80px -120px auto;width:340px;height:340px;border-radius:50%;background:rgba(255,255,255,.07)}
+.hero .logo{width:min(210px,52vw);height:auto;background:#fff;border-radius:50%;padding:26px;box-shadow:0 18px 50px rgba(0,0,0,.22);margin-bottom:26px}
+.hero h1{margin:0 0 10px;font-size:clamp(28px,6vw,46px);font-weight:800;line-height:1.35}
+.hero p{margin:0 auto 28px;max-width:560px;opacity:.92;font-size:clamp(16px,3.4vw,19px)}
+.btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 26px;border-radius:999px;font-weight:700;text-decoration:none;font-size:16px;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.solid{background:#fff;color:#256b75}
+section{padding:60px 0;scroll-margin-top:64px}
+h2{font-size:clamp(24px,4.5vw,32px);margin:0 0 8px;font-weight:800}
+h2::after{content:"";display:block;width:54px;height:4px;border-radius:4px;background:var(--brand);margin-top:10px}
+.lead{color:var(--muted);max-width:640px;margin:14px 0 30px}
+.about{display:grid;grid-template-columns:1.3fr 1fr;gap:34px;align-items:center}
+@media(max-width:760px){.about{grid-template-columns:1fr}}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.stat{background:var(--brand-soft);border-radius:16px;padding:20px;text-align:center}
+.stat b{display:block;font-size:20px;color:var(--brand-deep)}
+.stat span{font-size:14px;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-4px);box-shadow:0 12px 30px rgba(37,107,117,.13)}
+.ico{width:46px;height:46px;border-radius:14px;background:var(--brand-soft);color:var(--brand-deep);display:grid;place-items:center;margin-bottom:14px}
+.ico svg{width:24px;height:24px}
+.card h3{margin:0 0 6px;font-size:19px}
+.card p{margin:0;color:var(--muted);font-size:15.5px}
+.contact{background:var(--brand-soft)}
+.links{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.link{display:flex;align-items:center;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;text-decoration:none;color:var(--ink);transition:transform .2s,border-color .2s}
+.link:hover{transform:translateY(-3px);border-color:var(--brand)}
+.link .ico{margin:0;flex:none;background:var(--brand);color:#fff}
+.link b{display:block;font-size:17px}
+.link small{color:var(--muted);font-size:13.5px}
+footer{padding:28px 0;text-align:center;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+a:focus-visible{outline:3px solid var(--brand);outline-offset:3px}
+.btn:active,.link:active{outline:3px solid var(--brand);outline-offset:3px}
+.hero .btn:focus-visible,.hero .btn:active{outline-color:#fff}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="#top"><img src="logo.png" alt="شعار النهل المنير"><span>النهل المنير</span></a>
+  <nav><a href="#about">من نحن</a><a href="#services">خدماتنا</a><a href="#contact">تواصل معنا</a></nav>
+</div></header>
+
+<div class="hero" id="top"><div class="wrap">
+  <img class="logo" src="logo.png" alt="شعار النهل المنير للتدريب والتأهيل">
+  <h1>النهل المنير للتدريب والتأهيل</h1>
+  <p>نبني المهارات ونؤهل الكفاءات، لنصنع فرقاً حقيقياً في مسيرتك المهنية.</p>
+  <div class="btns">
+    <a class="btn solid" href="#contact">تابعنا</a>
+  </div>
+</div></div>
+
+<section id="about"><div class="wrap about">
+  <div>
+    <h2>من نحن</h2>
+    <p class="lead" style="margin-bottom:0">النهل المنير جهة متخصصة في التدريب والتأهيل، نؤمن أن المعرفة الصحيحة والتدريب العملي هما أساس التطور. نقدم برامج مصممة بعناية لتناسب احتياج الأفراد والمؤسسات، بأسلوب واضح وتطبيق عملي ومتابعة مستمرة.</p>
+  </div>
+  <div class="stats">
+    <div class="stat"><b>تدريب عملي</b><span>تطبيق حقيقي</span></div>
+    <div class="stat"><b>تأهيل مهني</b><span>جاهزية لسوق العمل</span></div>
+    <div class="stat"><b>مدربون</b><span>ذوو خبرة</span></div>
+    <div class="stat"><b>متابعة</b><span>دعم بعد البرنامج</span></div>
+  </div>
+</div></section>
+
+<section id="services" style="background:var(--card);border-block:1px solid var(--line)"><div class="wrap">
+  <h2>خدماتنا</h2>
+  <p class="lead">برامج متنوعة تغطي احتياجات التطوير والتأهيل.</p>
+  <div class="grid">
+    <div class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg></div><h3>دورات تدريبية</h3><p>دورات في مجالات متعددة يقدمها مدربون متخصصون بأسلوب تفاعلي.</p></div>
+    <div class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"/><path d="M8.5 13 7 22l5-3 5 3-1.5-9"/></svg></div><h3>برامج تأهيلية</h3><p>مسارات متكاملة تجهزك بالمهارات المطلوبة للعمل والتقدم الوظيفي.</p></div>
+    <div class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></svg></div><h3>تدريب المؤسسات</h3><p>برامج مخصصة للشركات والفرق لرفع الكفاءة وتطوير الأداء.</p></div>
+    <div class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div><h3>شهادات وتقييم</h3><p>تقييم لمستوى المتدرب وشهادة تثبت ما أنجزه من برامج.</p></div>
+  </div>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap">
+  <h2>تواصل معنا</h2>
+  <p class="lead">تابع جديدنا وتواصل معنا عبر حساباتنا الرسمية.</p>
+  <div class="links">
+    <a class="link" href="https://alnahlalmoneer.com/ar/" target="_blank" rel="noopener"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg></span><span><b>الموقع الرسمي</b><small>alnahlalmoneer.com</small></span></a>
+    <a class="link" href="https://www.instagram.com/alnahlalmoneer/" target="_blank" rel="noopener"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg></span><span><b>انستجرام</b><small>@alnahlalmoneer</small></span></a>
+    <a class="link" href="https://www.facebook.com/share/1CeNKvswUN/" target="_blank" rel="noopener"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></span><span><b>فيسبوك</b><small>صفحة النهل المنير</small></span></a>
+  </div>
+</div></section>
+
+<footer><div class="wrap">© النهل المنير للتدريب والتأهيل. جميع الحقوق محفوظة.</div></footer>
+
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(function(a){
+  a.addEventListener('click',function(e){
+    var id=a.getAttribute('href').slice(1);
+    var el=id==='top'?document.body:document.getElementById(id);
+    if(!el)return;
+    e.preventDefault();
+    el.scrollIntoView({behavior:'smooth',block:'start'});
+  });
+});
+</script>
+</body>
+                                                                                                                                                                    </html>
